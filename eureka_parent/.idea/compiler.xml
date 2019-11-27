@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bs_config" />
+        <module name="bs_test" />
+        <module name="bs_eureka" />
+        <module name="bs_user" />
+        <module name="bs_zuul" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
