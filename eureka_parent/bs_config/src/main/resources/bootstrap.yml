@@ -1,20 +1,23 @@
 server:
   port: 5001
+
+#连接注册中心
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: true #支持域名直接解析ip
+
 spring:
   application:
-    name: bs-config  # 配置中心的名称
+    name: config-service  # 配置中心的名称
   cloud:
     config:
       server:
         git:
-          #gitlib地址
+          #github地址
           uri: https://github.com/Crazy-Sleep/bs_config.git
-          #gitlib的用户名 和 密码  如果是public 项目，则不需要写
+          #github的用户名和密码  如果是public 项目，则不需要写
           username:
           password:

@@ -1,9 +1,9 @@
-package com.bosssoft.user;
+package com.bosssoft.order;
+
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -12,13 +12,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableEurekaClient // 开启客户端注解
 @EnableFeignClients // 开启服务之间调用 采用feign
 @EnableTransactionManagement  //开启事务
-@MapperScan("com.bosssoft.user.mapper") //扫描mapper
-@EnableCircuitBreaker  //#开启熔断器
-public class UserStart {
+@MapperScan("com.bosssoft.order.mapper") //扫描mapper
+public class OrderStart {
 
     public static void main(String[] args) {
-
-        SpringApplication.run(UserStart.class, args);
-
+        SpringApplication.run(OrderStart.class, args);
     }
 }

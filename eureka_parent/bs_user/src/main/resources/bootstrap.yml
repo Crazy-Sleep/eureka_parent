@@ -4,9 +4,8 @@ spring:
       discovery:
         enabled: true
         serviceId: config-service #配置中心的名称
-      name: zuulConfig  #名称前缀
+      name: userConfig  #名称前缀
       profile: dev #名称后缀
-
 #连接注册中心
 eureka:
   client:

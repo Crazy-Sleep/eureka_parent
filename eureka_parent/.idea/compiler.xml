@@ -6,12 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bs_config" />
-        <module name="bs_test" />
-        <module name="bs_eureka" />
+        <module name="bs_order" />
         <module name="bs_user" />
+        <module name="bs_config" />
+        <module name="bs_eureka" />
         <module name="bs_zuul" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bs_test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

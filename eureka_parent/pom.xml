@@ -51,8 +51,8 @@
     <modules>
         <module>bs_eureka</module>
         <module>bs_config</module>
-        <module>bs_test</module>
         <module>bs_user</module>
         <module>bs_zuul</module>
+        <module>bs_order</module>
     </modules>
 </project>
